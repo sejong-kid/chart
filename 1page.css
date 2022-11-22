@@ -1,0 +1,199 @@
+body {
+  background-color: rgb(235, 235, 235);
+}
+/* 폰트 패밀리 구역 */
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+  font-family: 'PyeongChangPeace-Bold';
+  font-size: 70px;
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.808);
+  text-align: center;
+}
+/* body 가운데 정렬 및 기타 속성 */
+.select {
+  text-align: center;
+  margin-top: 50px;
+}
+select {
+  font-family: 'GongGothicMedium';
+  background-color: rgba(0, 0, 0, 0.808);
+  font-size: 30px;
+  text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.486);
+  color: aqua;
+  height: 50px;
+  width: 870px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+p {
+  padding-top: 30px;
+  color: rgba(0, 0, 0, 0.678);
+  font-family: 'GongGothicMedium';
+  font-size: 30px;
+}
+.chartCard {
+  text-align: center;
+}
+
+/* 월별 카드 보유자 수 user */
+.user {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.user canvas {
+  margin-left: -60px;
+  margin-top: -80px;
+}
+/* 평균 카드 개수 avg */
+.avg {
+  margin: 0 auto;
+  width: 870px;
+  height: 250px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+.avg canvas {
+  margin-top: 30px;
+  margin-left: -60px;
+}
+.image {
+  text-align: center;
+}
+img {
+  width: 70px;
+  height: 70px;
+  filter: invert(67%) sepia(2%) saturate(3%) hue-rotate(344deg) brightness(90%) contrast(92%);
+}
+.card_1, .card_2, .card_3, .card_4 {
+  filter: invert(62%) sepia(28%) saturate(5929%) hue-rotate(311deg) brightness(102%) contrast(101%);}
+/* 평균 카드 한도 lmt */
+.lmt {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+
+}
+
+.lmt canvas {
+  margin-top: -80px;
+  margin-left: -70px;
+  scale: 90%;
+}
+/* 카드 이용 금액 use */
+.use {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.use canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* 신용 판매 이용 금액 sle */
+.sle {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.sle canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* 일시불 이용 금액 lsp */
+.lsp {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.lsp canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* 할부 이용 금액 instl */
+.instl {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.instl canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* 현금 서비스 이용 금액 cash */
+.cash {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.cash canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+/* 해외 소비 금액 global */
+.global {
+  margin: 0 auto;
+  width: 870px;
+  height: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.500);
+}
+
+.global canvas {
+  scale: 90%;
+  margin-top: -30px;
+  margin-left: -30px;
+}

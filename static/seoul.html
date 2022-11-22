@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="../1page.css">
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="title">
+    전국시도단위 소비정보데이터
+  </div>
+  <div class="subtitle">
+    DATA Ver.
+  </div>
+  <div class="version">
+    2022.09
+  </div>
+  <div class="city_menu">
+    <ul class="city">
+      <li>
+        <button> 서울 </button>
+        <button> 부산 </button>
+        <button> 대구 </button>
+        <button> 인천 </button>
+        <button> 광주 </button>
+        <button> 대전 </button>
+        <button> 울산 </button>
+        <button> 세종 </button>
+        <button> 제주 </button>
+        <button> 경기 </button>
+        <button> 강원 </button>
+        <button> 충북 </button>
+        <button> 충남 </button>
+        <button> 전북 </button>
+        <button> 전남 </button>
+        <button> 경북 </button>
+        <button> 경남 </button>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <div class="screen">
+    <canvas id="user"></canvas>
+    <canvas id="avg_card"></canvas>
+    <canvas id="lmt"></canvas>
+    <canvas id="use"></canvas>
+    <canvas id="sle"></canvas>
+    <canvas id="lsp"></canvas>
+    <canvas id="instl"></canvas>
+    <canvas id="cash"></canvas>
+    <canvas id="global"></canvas>
+  </div>
+  <script>
+    var ctx = document.getElementById("user").getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
+    datasets: [{
+      label: '백만 명',
+      data: [8, 8, 8, 8, 8, 8, 8, 8, 8],
+      backgroundColor: [
+        'rgba(255, 206, 86, 1)'
+      ],
+      borderWidth: 3,
+      boderSkipped: false,
+    },
+    {
+      label: '백 명',
+      data: [45, 49, 55, 40, 43, 48, 10, 15, 17],
+      backgroundColor: ['rgba(255, 99, 132, 1)'],
+      bprderColor: 'transparent',
+      borderWidth: 3,
+      boderSkipped: false,
+        }]
+    },
+    options:{
+    scales: {
+      xAxes: {
+        ticks: {
+          color: 'rgba(255, 255, 255, 2)',
+        },
+        grid: {
+          drawOnChartArea: false
+        },
+        stacked: true
+      },
+      xAxes2: {
+        grid: {
+          drawOnChartArea: false
+        },
+        labels: [8087499, 8084383, 8083875, 8091903, 8089123, 8087824, 8088680, 8090127, 8088928]
+      },
+      yAxes: {
+        stacked: true,
+        beginAtZero: true,
+        ticks: {
+          color: 'rgba(255, 255, 255, 2)',
+        },
+        grid: {
+          drawOnChartArea: false
+        },
+      }
+    },
+    layout: {
+      padding: {
+        left: 50,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+    plugins: {
+      title: {
+        color: 'rgba(255, 255, 255, 2)',
+        display: true,
+        text: '서울의 월별 카드 보유자 수',
+      },
+      legend: {
+        display: true,
+        position: 'right'
+      }
+    }
+  }},);
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" src="../1page.js"></script>
+</body>
+
+</html>
