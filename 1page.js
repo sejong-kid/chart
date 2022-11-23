@@ -1,8 +1,6 @@
 // chartStatus = seoul_all
 // chartStatus2 = busan_all
-
 // config1 = 서울 유저 바테이블
-
 // seoul
 // 월별 카드 보유자 수
 const seoul_user = {

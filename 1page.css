@@ -28,9 +28,10 @@ body {
   text-align: center;
 }
 /* body 가운데 정렬 및 기타 속성 */
+
 .select {
+  margin: 0 auto;
   text-align: center;
-  margin-top: 50px;
 }
 select {
   font-family: 'GongGothicMedium';
@@ -39,13 +40,12 @@ select {
   text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.486);
   color: aqua;
   height: 50px;
-  width: 870px;
+  width: 550px;
   border: none;
   border-radius: 15px;
-  text-align: center;
+  text-align: center;  
 }
 p {
-  padding-top: 30px;
   color: rgba(0, 0, 0, 0.678);
   font-family: 'GongGothicMedium';
   font-size: 30px;
@@ -53,7 +53,32 @@ p {
 .chartCard {
   text-align: center;
 }
+.download {
+  padding-top: 10px;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);  
+  border-radius: 15px;
+}
 
+.download img {
+  width: 60px;
+  height: 50px;
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.download a {
+  font-family: 'GongGothicMedium';
+  font-size: 25px;
+  color:rgba(0, 0, 0, 0.808) ;
+  text-decoration: none;
+}
 /* 월별 카드 보유자 수 user */
 .user {
   margin: 0 auto;
